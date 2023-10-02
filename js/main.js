@@ -12,7 +12,7 @@ const setDefaultValues = (pickers) => {
 
 	pickers.date.value = date;
 
-	const time = [ current.getHours(), current.getMinutes() ]
+	const time = [ current.getHours(), 0 ]
 		.map(item => item.toString().padStart(2, "0"))
 		.join(":");
 
