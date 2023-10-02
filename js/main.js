@@ -3,8 +3,6 @@ var pickers = {
 	time: document.querySelector('input[type="time"]'),
 	text: document.querySelector('#text')
 }
-
-
 const setDefaultValues = (pickers) => {
 	const current = new Date();
 	
@@ -21,8 +19,6 @@ const setDefaultValues = (pickers) => {
 	pickers.time.value = time;
 }
 setDefaultValues(pickers);
-
-
 
 pickers.date.addEventListener('change', pickHandler)
 pickers.time.addEventListener('change', pickHandler)
